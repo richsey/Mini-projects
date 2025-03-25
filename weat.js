@@ -24,6 +24,7 @@ async function getWeather(city) {
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
+    //change image according to weather
     const weatherMain = data.weather[0].main;
     if (weatherMain == "Clouds") {
       weatherIcon.src = "images/clouds.png";
